@@ -1,9 +1,14 @@
 package Vista;
 
-public class proyecto extends javax.swing.JFrame {
+import java.sql.Connection;
 
+public class proyecto extends javax.swing.JFrame {
+    
+    Conexion conexion;
     public proyecto() {
         initComponents();
+        conexion= new Conexion();
+        Connection con = conexion.getConnection();
     }
 
     @SuppressWarnings("unchecked")
