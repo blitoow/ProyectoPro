@@ -36,6 +36,9 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
+        Equipos = new javax.swing.JDialog();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         txtBuscar = new javax.swing.JTextField();
         btbLimpiar = new javax.swing.JButton();
@@ -179,6 +182,36 @@ public class Interfaz extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(30, Short.MAX_VALUE))
+        );
+
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Id_equipo", "Nombre", "Localidad", "Estadio"
+            }
+        ));
+        jScrollPane3.setViewportView(jTable3);
+
+        javax.swing.GroupLayout EquiposLayout = new javax.swing.GroupLayout(Equipos.getContentPane());
+        Equipos.getContentPane().setLayout(EquiposLayout);
+        EquiposLayout.setHorizontalGroup(
+            EquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EquiposLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+        EquiposLayout.setVerticalGroup(
+            EquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EquiposLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -374,6 +407,7 @@ public class Interfaz extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDialog BuscadorJugador;
     private javax.swing.JDialog ClasificacionJornada;
+    private javax.swing.JDialog Equipos;
     private javax.swing.JButton btbLimpiar;
     private javax.swing.JButton btnClasificacion;
     private javax.swing.JButton btnEquipo;
@@ -400,8 +434,10 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
     private javax.swing.JComboBox jcbCalendario;
     private javax.swing.JTextField txtBuscar;
     // End of variables declaration//GEN-END:variables
