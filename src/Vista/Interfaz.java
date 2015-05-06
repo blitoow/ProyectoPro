@@ -1,11 +1,12 @@
 package Vista;
 
+import Modelo.Conexion;
 import java.sql.Connection;
 
-public class proyecto extends javax.swing.JFrame {
+public class Interfaz extends javax.swing.JFrame {
     
     Conexion conexion;
-    public proyecto() {
+    public Interfaz() {
         initComponents();
         conexion= new Conexion();
         Connection con = conexion.getConnection();
@@ -365,7 +366,7 @@ public class proyecto extends javax.swing.JFrame {
     public static void main(String args[]) {
              java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new proyecto().setVisible(true);
+                new Interfaz().setVisible(true);
             }
         });
     }
