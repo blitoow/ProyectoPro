@@ -236,6 +236,16 @@ public class Interfaz extends javax.swing.JFrame {
         btnEstadisticas.setText("Estadísticas");
 
         btnEquipo.setText("Equipos");
+        btnEquipo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEquipoMouseClicked(evt);
+            }
+        });
+        btnEquipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEquipoActionPerformed(evt);
+            }
+        });
 
         jcbCalendario.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccionar..." }));
         jcbCalendario.addActionListener(new java.awt.event.ActionListener() {
@@ -394,6 +404,14 @@ public class Interfaz extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btnEquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEquipoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEquipoActionPerformed
+
+    private void btnEquipoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEquipoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEquipoMouseClicked
 
 
     public static void main(String args[]) {
